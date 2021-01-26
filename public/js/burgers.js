@@ -28,7 +28,7 @@ $(function() {
     var newBurger = {
       
       burger_name: $("#burger").val().trim(),
-      devoured: false
+      devoured: 0
  
    };
 
@@ -45,4 +45,19 @@ $(function() {
     );
   });
 
+
+  $(".delete-burger").on("click", function(event) {
+    var id = $(this).data("id");
+
+    // Send the DELETE request.
+    $.ajax("/api/burgers/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        console.log("deleted burger", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
 });
