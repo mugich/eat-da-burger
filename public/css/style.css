@@ -1,9 +1,10 @@
 body {
-  background-color:  rgb(190, 154, 87);
+  background-color:  rgb(179, 145, 77);
   width: 100%;
 }
 
-.avatar{
+.image{
 	height:200px;
-	border-radius: 50%;
+  border-radius: 50%;
+  
 }
