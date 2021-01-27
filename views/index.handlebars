@@ -11,10 +11,11 @@
 
 
   <div class="row">
+    
     <div class="col-6">
-      <h2 style="color:white">Burgers as yet undevoured. . .</h2>
 
       <ul>
+        <h2 style="color:white">Burgers Available</h2>
         {{#each burgers}}
         {{#unless devoured}}
         {{> burgers/burger-block devour=true}}
@@ -26,9 +27,10 @@
 
 
     <div class="col-6">
-      <h2 style="color:white">Burgers that have been DEVOURED.</h2>
+      
 
       <ul>
+        <h2 style="color:white">Burgers DEVOURED</h2>
         {{#each burgers}}
         {{#if devoured}}
         {{> burgers/burger-block devour=false}}
