@@ -2,3 +2,8 @@ body {
   background-color:  rgb(190, 154, 87);
   width: 100%;
 }
+
+.avatar{
+	height:200px;
+	border-radius: 50%;
+}
