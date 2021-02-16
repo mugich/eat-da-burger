@@ -4,8 +4,6 @@ This burger logger app is created with MySQL, Node, Express, Handlebars and a ho
 
 #### Directory structure
 
-All the recommended files and directories from the steps above should look like the following structure:
-
 ```
 .
 ├── config
